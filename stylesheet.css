@@ -7,26 +7,32 @@ a {
 	text-decoration: none;
 }
 
-a:visited {
-	color: white;
-}
-
-a:hover {
-	background-color: white;
+a:link {
 	color: #FF7575;
-	border: 1px solid #FF7575;
 }
 
-.buttons {
-	font-size: 30px;
-	padding: 5px;
+a:visited {
+	color: #FF7575;
 }
 
+.nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 5;
+	padding: 0.25px;
+	background-color: white;
+	margin-top: 0;
+	width: 100%;
+	text-align: center;
+}
 .buttons li {
-	font-size: 30px;
+	font-size: 17px;
 	display: inline;
-	padding: 5px;
+	padding: 1px 5px 1px 5px;
+	background-color: white;
 }
+
 .opening {
 	color: white;
 	height: 60vh;
