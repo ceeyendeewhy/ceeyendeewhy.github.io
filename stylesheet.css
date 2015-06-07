@@ -1,3 +1,8 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
 body {
 	background-color: #FF7575;
 	font-family: "Trebuchet MS", Arial, sans-serif;
@@ -16,11 +21,11 @@ a:visited {
 }
 
 .nav {
+	z-index: 5;
 	position: fixed;
 	top: 0;
 	left: 0;
-	z-index: 5;
-	padding: 0.25px;
+	padding: 8px;
 	background-color: white;
 	margin-top: 0;
 	width: 100%;
@@ -35,29 +40,44 @@ a:visited {
 
 .opening {
 	color: white;
-	height: 60vh;
 	text-align: center;
 	font-size: 50px;
+	top: 25vh;
+}
+
+.name {
+	padding-top: 175px;
+	padding-bottom: 15px;
+	border-bottom: 2px dashed white;
 }
 
 .blurb {
 	font-family: "Century Gothic", sans-serif;
+	padding-bottom: 175px;
+	padding-top: 20px;
 }
 
+.down {
+	padding: 8px;
+}
 
 .heading {
 	padding: 32px;
 }
 
 .about {
-	min-width: 100%;
+	outline: none;
+	width: 100%;
+	margin-left: 0;
+	left: 0;
+	right: 0;
 	background: white;
 	color: #FF7575;
-	height: 100vh;
 	text-align: center;
 }
 
 .info {
+	left: 0;
 	list-style-type: none;
 	font-family: "Century Gothic", sans-serif;
 }
@@ -109,20 +129,17 @@ a:visited {
 
 
 .knowledge {
-	color: white;
-	background-color: #FF7575;
-	height: 100vh;
+	background-color: white;
+	color: #FF7575;
 }
 
 .projects {
 	color: #FF7575;
 	background-color: white;
-	height: 100vh;
 }
 
 .contact {
-	color: white;
-	background-color: #FF7575;
-	height: 100vh;
+	color: #FF7575;
+	background-color: white;
 }
 
