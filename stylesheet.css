@@ -4,7 +4,7 @@
 }
 
 body {
-	background-color: #FF7575;
+	background-color: white;
 	font-family: "Trebuchet MS", Arial, sans-serif;
 }
 
@@ -13,11 +13,11 @@ a {
 }
 
 a:link {
-	color: #FF7575;
+	color: #2D343C;
 }
 
 a:visited {
-	color: #FF7575;
+	color: #2D343C;
 }
 
 .nav {
@@ -26,7 +26,7 @@ a:visited {
 	top: 0;
 	left: 0;
 	padding: 8px;
-	background-color: white;
+	background-color: rgba(250, 235, 215, 0.5);
 	margin-top: 0;
 	width: 100%;
 	text-align: center;
@@ -35,10 +35,13 @@ a:visited {
 	font-size: 17px;
 	display: inline;
 	padding: 1px 5px 1px 5px;
-	background-color: white;
 }
 
 .opening {
+	background-image: url("photo.JPG");
+	width: 100vw;
+	margin: 0;
+	background-color: #FF7575;
 	color: white;
 	text-align: center;
 	font-size: 50px;
@@ -46,15 +49,20 @@ a:visited {
 }
 
 .name {
-	padding-top: 175px;
+	padding-top: 135px;
 	padding-bottom: 15px;
 	border-bottom: 2px dashed white;
+	color: #479FDA;
+	font-family: "Century Gothic", sans-serif;
+
 }
 
 .blurb {
 	font-family: "Century Gothic", sans-serif;
 	padding-bottom: 175px;
 	padding-top: 20px;
+	font-size: 34px;
+	color: #479FDA;
 }
 
 .down {
@@ -62,15 +70,18 @@ a:visited {
 }
 
 .heading {
+	width: 100vw;
 	float: left;
 	font-size: 75px;
 	padding: 32px;
 }
 
 .about {
+	clear: both;
 	outline: none;
 	width: 100%;
 	margin-left: 0;
+	margin-right: 0;
 	left: 0;
 	right: 0;
 	background: white;
@@ -80,41 +91,42 @@ a:visited {
 
 .info {
 	padding-right: 10px;
-	clear: both;
-	font-size: 30px;
+	float: right;
+	font-size: 20px;
 	padding-left: 30px;
 	text-align: left;
-	float: left;
 	left: 0;
 	list-style-type: none;
 	font-family: "Century Gothic", sans-serif;
-	padding-bottom: 300px;
+	right: 0;
 }
 
 .images {
 	list-style-type: none;
-    padding: 0;
+	margin: 2px;
     text-align: center;
     padding: 25px;
+    clear: both;
 }
 
 .description:hover span {
 	visibility: visible;
+	margin: 2px;
 	background: rgba(0,0,0,0.5);
 
 }
 
 .images li {
 	display: inline-block;
-    height: 175px;
+    height: 200px;
     position: relative;
-    width: 175px;
+    width: 200px;
     margin: 2px;
 }
 
 .images img {
-	height: 175px;
-	width: 175px;
+	height: 200px;
+	width: 200px;
 	display: inline-block;
 	margin: 2px;
 }
@@ -123,11 +135,12 @@ a:visited {
   	color: white;
   	cursor: pointer;
   	display: table;
-	height: 175px;
+	height: 200px;
 	left: 0;
 	position: absolute;
 	top: 0;
-	width: 175px;
+	width: 200px;
+	margin: 2px;
 }
 .description span {
 	display: table-cell;
@@ -143,6 +156,19 @@ a:visited {
 	background-color: white;
 	color: #FF7575;
 }
+
+.skills {
+	text-align: center;
+}
+
+.skills li {
+	display: inline;
+	margin: 5px;
+	font-size: 20px;
+	text-align: center;
+}
+
+
 
 .projects {
 	clear: both;
