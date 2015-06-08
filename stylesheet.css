@@ -38,8 +38,8 @@ a:visited {
 }
 
 .opening {
-	background-image: url("photo.JPG");
-	width: 100vw;
+	background-image: url("photo.jpg");
+	width: 100%;
 	margin: 0;
 	background-color: #FF7575;
 	color: white;
