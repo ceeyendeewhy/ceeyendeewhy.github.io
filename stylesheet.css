@@ -62,6 +62,8 @@ a:visited {
 }
 
 .heading {
+	float: left;
+	font-size: 75px;
 	padding: 32px;
 }
 
@@ -77,16 +79,23 @@ a:visited {
 }
 
 .info {
+	padding-right: 10px;
+	clear: both;
+	font-size: 30px;
+	padding-left: 30px;
+	text-align: left;
+	float: left;
 	left: 0;
 	list-style-type: none;
 	font-family: "Century Gothic", sans-serif;
+	padding-bottom: 300px;
 }
 
 .images {
 	list-style-type: none;
-    margin: 0;
     padding: 0;
     text-align: center;
+    padding: 25px;
 }
 
 .description:hover span {
@@ -97,14 +106,15 @@ a:visited {
 
 .images li {
 	display: inline-block;
-    height: 200px;
+    height: 175px;
     position: relative;
-    width: 200px;
+    width: 175px;
+    margin: 2px;
 }
 
 .images img {
-	height: 200px;
-	width: 200px;
+	height: 175px;
+	width: 175px;
 	display: inline-block;
 	margin: 2px;
 }
@@ -113,11 +123,11 @@ a:visited {
   	color: white;
   	cursor: pointer;
   	display: table;
-	height: 200px;
+	height: 175px;
 	left: 0;
 	position: absolute;
 	top: 0;
-	width: 200px;
+	width: 175px;
 }
 .description span {
 	display: table-cell;
@@ -129,11 +139,13 @@ a:visited {
 
 
 .knowledge {
+	clear: both;
 	background-color: white;
 	color: #FF7575;
 }
 
 .projects {
+	clear: both;
 	color: #FF7575;
 	background-color: white;
 }
