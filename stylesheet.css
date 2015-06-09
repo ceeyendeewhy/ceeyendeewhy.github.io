@@ -46,6 +46,7 @@ a:visited {
 	background-image: url("photo.jpg");
 	background-repeat: no-repeat;
 	background-size: 100%;
+
 	margin: 0;
 	background-color: #FF7575;
 	text-align: center;
@@ -76,39 +77,42 @@ a:visited {
 	float: left;
 	font-size: 75px;
 	padding: 32px;
+	clear: both;
 }
 
 .about {
-	clear: both;
 	outline: none;
 	width: 100%;
 	margin-left: 0;
 	margin-right: 0;
 	left: 0;
 	right: 0;
-	background: white;
 	color: #2D343C;
 	text-align: center;
+	display: inline-block;
+}
+
+.info li {
+	border: none;
+	margin: 0;
 }
 
 .info {
-	padding-right: 10px;
-	float: right;
-	font-size: 20px;
-	padding-left: 30px;
-	text-align: left;
-	left: 0;
+	float: left;
+	font-size: 30px;
+	text-align: center;
 	list-style-type: none;
 	font-family: "Century Gothic", sans-serif;
-	right: 0;
+	display: inline-block;
+	margin-left: 40px;
+	margin-top: 100px;
+
 }
 
 .images {
 	list-style-type: none;
 	margin: 2px;
     text-align: center;
-    padding: 25px;
-    clear: both;
 }
 
 .description:hover span {
@@ -120,17 +124,16 @@ a:visited {
 }
 
 .images li {
-	display: inline-block;
-    height: 200px;
+	list-style-type: none;
+    height: 175px;
     position: relative;
-    width: 200px;
+    width: 175px;
     margin: 2px;
 }
 
 .images img {
-	height: 200px;
-	width: 200px;
-	display: inline-block;
+	height: 175px;
+	width: 175px;
 	margin: 2px;
 }
 
@@ -138,11 +141,11 @@ a:visited {
   	color: black;
   	cursor: pointer;
   	display: table;
-	height: 200px;
+	height: 175px;
 	left: 0;
 	position: absolute;
 	top: 0;
-	width: 200px;
+	width: 175px;
 	margin: 2px;
 }
 .description span {
@@ -152,10 +155,15 @@ a:visited {
     visibility: hidden;
 }
 
+.left1, .left2 {
+	float: left;
+}
 
 
+.right1, .right2 {
+	float: right;
+}
 .knowledge {
-	clear: both;
 	background-color: white;
 	color: #2D343C;
 }
