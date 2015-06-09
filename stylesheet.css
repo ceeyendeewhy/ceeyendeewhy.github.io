@@ -29,16 +29,14 @@ a:visited {
 	position: fixed;
 	top: 0;
 	left: 0;
-	padding: 8px;
+	padding: 1px;
 	background-color: rgba(250, 235, 215, 0.5);
 	margin-top: 0;
 	width: 100%;
 	text-align: center;
 }
 
-h1 {
 
-}
 .buttons li {
 	font-size: 17px;
 	display: inline;
@@ -49,7 +47,6 @@ h1 {
 	background-image: url("photo.jpg");
 	background-repeat: no-repeat;
 	background-size: 100%;
-
 	margin: 0;
 	background-color: #FF7575;
 	text-align: center;
@@ -76,18 +73,12 @@ h1 {
 }
 
 .heading {
-	width: 100vw;
-	font-size: 75px;
-	padding: 32px;
-	float: left;
-	
+	padding: 32px;	
+	font-size: 60px;
 }
 
 .about {
 	color: #2D343C;
-	margin-left: 0;
-	margin-right: 0;
-	display: inline-block;
 }
 
 
@@ -103,21 +94,25 @@ h1 {
 	text-align: center;
 	list-style-type: none;
 	font-family: "Century Gothic", sans-serif;
+
 }
 
 
 .instruction {
+	margin-top: 50px;
+	margin-bottom: 50px;
+	margin-right: 425px;
+	margin-left: 425px;
 	font-size: 15px;
 	border: 2px solid #2D343C;
 	padding: 13px;
-	margin-left: auto;
-	margin-right: auto;	
+	position: relative;
 }
 
 .images {
 	list-style-type: none;
-	margin: 2px;
     text-align: center;
+    margin: 2px;
 }
 
 
@@ -132,28 +127,29 @@ h1 {
 
 .images li {
 	list-style-type: none;
-    height: 175px;
-    width: 175px;
+    height: 200px;
+    width: 200px;
     margin: 2px;
     position: relative;
-    display: inline;
+    display: inline-block;
 }
 
 .images img {
-	height: 175px;
-	width: 175px;
+	height: 200px;
+	width: 200px;
 	margin: 2px;
+	display: inline-block;
 }
 
 .description {
   	color: black;
   	cursor: pointer;
   	display: table;
-	height: 175px;
+	height: 200px;
 	left: 0;
 	position: absolute;
 	top: 0;
-	width: 175px;
+	width: 200px;
 	margin: 2px;
 }
 .description span {
