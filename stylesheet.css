@@ -56,6 +56,8 @@ a:visited {
 	padding-top: 135px;
 	padding-bottom: 15px;
 	border-bottom: 2px dashed white;
+	font-family: "Century Gothic", sans-serif;
+
 }
 
 .blurb {
@@ -182,6 +184,34 @@ a:visited {
 	clear: both;
 	color: #2D343C;
 	background-color: white;
+	list-style-type: none;
+	text-align: center;
+}
+
+.classProjects {
+	display: inline-block;
+}
+
+.classProjectsInfo {
+	padding: 20px;
+	display: inline-block;
+	padding-bottom: 30px;
+}
+
+.classProjects li {
+	display: inline;
+	padding: 5px;
+	margin: 10px;
+}
+
+.classProjects ul {
+	margin-bottom: 30px;
+}
+
+.classProjects img {
+	border: 2px solid black;
+	height: 250px;
+	width: 250px;
 }
 
 .contact {
