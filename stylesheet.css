@@ -180,42 +180,94 @@ a:visited {
 
 
 
-.projects {
+/*.projects {
 	clear: both;
 	color: #2D343C;
 	background-color: white;
 	list-style-type: none;
 	text-align: center;
-}
+}*/
 
 .classProjects {
-	display: inline-block;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
 }
 
-.classProjectsInfo {
-	padding: 20px;
-	display: inline-block;
-	padding-bottom: 30px;
-}
+
 
 .classProjects li {
-	display: inline;
-	padding: 5px;
-	margin: 10px;
+	display: inline-block;
+	position: relative;
+	height: 250px;
+	width: auto;
 }
 
-.classProjects ul {
-	margin-bottom: 30px;
-}
 
 .classProjects img {
-	border: 2px solid black;
 	height: 250px;
-	width: 250px;
+	width: auto;
 }
 
+
+.wrap {
+	height: 200px;
+	width: auto;
+}
+ul.img-list {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+ul.img-list li {
+	display: inline-block;
+	height: 250px;
+	position: relative;
+	width: auto;
+}
+
+span.description2 {
+	background: rgba(0,0,0,0.5);
+  	color: white;
+  	cursor: pointer;
+  	display: table;
+  	height: 250px;
+  	left: 0;
+  	position: absolute;
+  	top: 0;
+  	width: auto;
+}
+
+span.description2 span {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+
+span.description2 {
+  background: rgba(0,0,0,0.5);
+  color: white;
+  cursor: pointer;
+  display: table;
+  height: 250px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  opacity: 0;
+}
+ 
+ul.img-list li:hover span.description2 {
+  opacity: 1;
+}
 .contact {
 	color: #2D343C;
 	background-color: white;
 }
+
+
 
