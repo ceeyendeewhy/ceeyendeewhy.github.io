@@ -200,19 +200,19 @@ a:visited {
 .classProjects li {
 	display: inline-block;
 	position: relative;
-	height: 250px;
+	height: 275px;
 	width: auto;
 }
 
 
 .classProjects img {
-	height: 250px;
+	height: 275px;
 	width: auto;
 }
 
 
 .wrap {
-	height: 200px;
+	height: 275px;
 	width: auto;
 }
 ul.img-list {
@@ -220,13 +220,15 @@ ul.img-list {
 	margin: 0;
 	padding: 0;
 	text-align: center;
+	margin-top: 20px;
 }
 
 ul.img-list li {
 	display: inline-block;
-	height: 250px;
+	height: 275px;
 	position: relative;
 	width: auto;
+	margin: 5px;
 }
 
 span.description2 {
@@ -234,7 +236,7 @@ span.description2 {
   	color: white;
   	cursor: pointer;
   	display: table;
-  	height: 250px;
+  	height: 275px;
   	left: 0;
   	position: absolute;
   	top: 0;
@@ -247,13 +249,19 @@ span.description2 span {
   vertical-align: middle;
 }
 
+.classProjectsInfo {
+	text-align: center;
+	font-size: 20px;
+	padding: 10px;
+}
 
 span.description2 {
-  background: rgba(0,0,0,0.5);
+	font-size: 25px;
+  background: rgba(0,0,0,0.75);
   color: white;
   cursor: pointer;
   display: table;
-  height: 250px;
+  height: 275px;
   left: 0;
   position: absolute;
   top: 0;
