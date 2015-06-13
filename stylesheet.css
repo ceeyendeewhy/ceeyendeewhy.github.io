@@ -64,7 +64,27 @@ a:visited {
 	padding-bottom: 175px;
 	padding-top: 20px;
 	font-size: 34px;
+	margin-top: 500px;
 }
+
+.opening img {
+	height: 500px;
+	width: auto;
+	clear: both;
+	position: absolute;
+	margin-top: 10px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.cindy {
+	border: 1px solid black;
+}
+
+.cindy_jump {
+	border: 1px solid black;
+}
+
 
 .heading {
 	clear: both;
@@ -113,6 +133,8 @@ a:visited {
 	list-style-type: none;
     text-align: center;
     margin: 2px;
+    margin-left: 40px;
+    margin-right: 40px;
 }
 
 
