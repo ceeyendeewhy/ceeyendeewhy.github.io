@@ -69,19 +69,20 @@ a:visited {
 
 
 #cindy_jump {
-	display: none;
-	height: 325px;
-	margin-bottom: 50px;
-	padding-left: 200px;
+	height: 300px;
+}
 
-
+.opening li {
+	list-style-type: none;
+	display: inline;
+	height: 300px;
+	font-size: 200px;
 }
 
 #cindy {
-	height: 350px;
-	padding-left: 200px;
-	padding-right: 200px;
+	height: 300px;
 	margin-top: 100px;
+	padding-top: 0px;
 }
 
 #cindy:hover + #cindy_jump {
