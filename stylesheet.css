@@ -50,6 +50,7 @@ a:visited {
 	text-align: center;
 	font-size: 50px;
 	top: 25vh;
+	width: 100%;
 }
 
 .name {
@@ -64,50 +65,28 @@ a:visited {
 	padding-bottom: 175px;
 	padding-top: 20px;
 	font-size: 34px;
-	margin-top: 500px;
 	display: inline-block;
 }
 
 .opening img {
 	height: 500px;
-	left: 50%;
-	right: 50%;
-	position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-top: 0px;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    border: 1px solid black;
-    margin-top: -80px;
+    display: inline-block;
+}
+
+.opening li {
+	list-style-type: none;
+	display: inline-block;
 }
 
 .cindy {
 	
 }
 
-.cindy:hover {
-	visibility: hidden;
-	height: 500px;
-	left: 50%;
-	right: 50%;
-	position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-top: 0px;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    border: 1px solid black;
-    margin-top: -80px;
-}
 
 .cindy_jump {
-	visibility: hidden;
-	z-index: 1000;
 }
 
 .cindy_jump:hover {
-	visibility: visible;
 }
 
 
