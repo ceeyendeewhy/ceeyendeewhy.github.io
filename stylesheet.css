@@ -65,24 +65,49 @@ a:visited {
 	padding-top: 20px;
 	font-size: 34px;
 	margin-top: 500px;
+	display: inline-block;
 }
 
 .opening img {
 	height: 500px;
-	width: auto;
-	clear: both;
+	left: 50%;
+	right: 50%;
 	position: absolute;
-	margin-top: 10px;
-	margin-left: auto;
-	margin-right: auto;
+    top: 50%;
+    left: 50%;
+    margin-top: 0px;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    border: 1px solid black;
+    margin-top: -80px;
 }
 
 .cindy {
-	border: 1px solid black;
+	
+}
+
+.cindy:hover {
+	visibility: hidden;
+	height: 500px;
+	left: 50%;
+	right: 50%;
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: 0px;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    border: 1px solid black;
+    margin-top: -80px;
 }
 
 .cindy_jump {
-	border: 1px solid black;
+	visibility: hidden;
+	z-index: 1000;
+}
+
+.cindy_jump:hover {
+	visibility: visible;
 }
 
 
