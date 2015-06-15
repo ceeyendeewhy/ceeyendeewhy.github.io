@@ -62,32 +62,33 @@ a:visited {
 }
 
 .blurb {
-	padding-bottom: 175px;
-	padding-top: 20px;
 	font-size: 34px;
-	display: inline-block;
-}
-
-.opening img {
-	height: 500px;
-    display: inline-block;
-}
-
-.opening li {
-	list-style-type: none;
-	display: inline-block;
-}
-
-.cindy {
-	
+	display: absolute;
+	clear: both;
 }
 
 
-.cindy_jump {
+#cindy_jump {
+	display: none;
+	height: 325px;
+	margin-bottom: 50px;
+	padding-left: 200px;
+
+
 }
 
-.cindy_jump:hover {
+#cindy {
+	height: 350px;
+	padding-left: 200px;
+	padding-right: 200px;
+	margin-top: 100px;
 }
+
+#cindy:hover + #cindy_jump {
+	display: initial;
+}
+
+
 
 
 .heading {
