@@ -69,24 +69,24 @@ a:visited {
 
 
 #cindy_jump {
-	height: 300px;
+	height: 200px;
 }
 
 .opening li {
 	list-style-type: none;
 	display: inline;
-	height: 300px;
 	font-size: 200px;
+	padding: 0;
 }
 
 #cindy {
-	height: 300px;
+	height: 200px;
 	margin-top: 100px;
-	padding-top: 0px;
 }
 
-#cindy:hover + #cindy_jump {
+#cindy:hover + #cindy_jump + .letter {
 	display: initial;
+	visibility: visible;
 }
 
 
