@@ -67,28 +67,29 @@ a:visited {
 	clear: both;
 }
 
+.opening {
+	display: inline-block;
+}
 
 #cindy_jump {
 	height: 200px;
+	display: none;
 }
 
 .opening li {
 	list-style-type: none;
+	display: none;
+}
+
+.imageshow:hover + #cindy_jump {
 	display: inline;
-	font-size: 200px;
-	padding: 0;
 }
 
 #cindy {
 	height: 200px;
 	margin-top: 100px;
+	display: inline;
 }
-
-#cindy:hover + #cindy_jump + .letter {
-	display: initial;
-	visibility: visible;
-}
-
 
 
 
@@ -260,6 +261,15 @@ span.description2 {
   	position: absolute;
   	top: 0;
   	width: auto;
+  	text-decoration: none;
+}
+
+.description2 a:link {
+	color: white;
+}
+
+.description2 a:visited {
+	color: white;
 }
 
 span.description2 span {
@@ -315,6 +325,60 @@ ul.img-list li:hover span.description2 {
 	color: #2D343C;
 	background-color: white;
 }
+
+
+/*Style for projects*/
+
+.checkers {
+	height: 400px;
+	display: inline-block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.checkers-title {
+	text-align: center;
+	font-size: 30px;
+	padding-bottom: 20px;
+	padding-top: 50px;
+}
+
+.checkers-title p {
+	font-size: 30px;
+}
+
+.checkers-description {
+	display: inline-block;
+	border: 1px solid black;
+	width: 600px;
+	margin: 40px;
+	clear: both;
+	margin-top: 5px;
+}
+
+.checkers-section {
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.view-more {
+	border: 2px solid black;
+	display: inline-block;
+	padding: 10px;
+	margin-top: 10px;
+}
+
+.view-more:hover {
+	background-color: white;
+	color: black;
+}
+
+.ngordnet-img {
+	height: 400px;
+}
+
+
 
 
 
