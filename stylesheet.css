@@ -86,6 +86,7 @@ a:visited {
 	width: auto;
 	margin-bottom: 150px;
 	padding-top: 50px;
+	display: none;
 }
 
 #cursor {
