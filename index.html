@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 		<link type="text/css" rel="stylesheet" href="stylesheet.css" />
 		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+		<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+		<script type="text/javascript" src="script.js"></script>
 		<title>Cindy Liu</title>
 	</head>
-
 	<body>
-
 		<div class="buttons">			
 			<div class="nav">
 				<ul>
@@ -19,116 +22,98 @@
 				</ul>
 			</div>
 		</div>
-
-
 		<div class="opening" style="text-align: center">
-			<div class="imageshow">
-				<img id="cindy" src="cindy.PNG">
-				<li>Cindy Liu</li>
+			<div class="hover-image">
+				<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+					<img class="cindy" src="cindy.PNG">
+					<img id="cursor" src="cursor.png">
+				</div>
 			</div>
-				
-			<img id="cindy_jump" src="cindy_jump.PNG">
-			<p class="blurb">Cindy</p>
-			<h6 class="down"><i class="fa fa-chevron-down"></i></h6>
+			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+				<p class="blurb">Hello, I'm Cindy.</p>
+				<h3 id="caption">See me jump.</h3>
+				<h6 class="down"><i class="fa fa-caret-down"></i></i></h6>
+			</div>
+			<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+				<img class="cindy_jump" src="cindy_jump.PNG">
+			</div>
 		</div>
-	</div>
-
-
 		<div class="about">
 			<a name="info"></a>
-			<h1 class="heading">Who I Am</h1>
+			<h1 class="heading">Who am I?</h1>
 			<div class="text">
-					<ul class="info">
-						<li>I'm a Florida born,</li>
-						<li>China/TN/AZ/CA raised,</li> 
-						<li>Cherry Garcia ice cream eating,</li> 
-						<li>tennis playing, critter loving student</li>
-						<li>studying Computer Science</li> 
-						<li>at the University of California, Berkeley.</li>
-					</ul>
-					<div class="instruction">
-					<p>Hover photos to learn more</p>
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					<div class="info">
+						<p>I am a Florida born, China/TN/AZ/CA raised, <br>
+						Cherry Garcia ice cream eating, tennis playing, <br>
+						critter loving student studying Computer Science <br>
+						at the University of California, Berkeley. <br>
+					</div>
 				</div>
-				</div>
-
-				<div class="images">
-						
-							<ul>
+			</div>
+			<div class="images">
+				<div class="col-lg-12 col-md-12col-sm-12 col-xs-12">
+					<ul>
 						<li>
 							<img src="mabel.JPG"/>
 							<span class="description"><span>This is Mabel, one of the kittens I've fostered</span></span>
 						</li>
-
 						<li>
 							<img src="butterfly.JPG"/>
 							<span class="description"><span>Taken in Zhenjiang, China</span></span>
-						</li>
+							</li>
 
 						<li>
 							<img src="crack.JPG"/>
 							<span class="description"><span>My most comfortable pair of knockoff Berkenstocks</span></span>
-						</li>
-
-			
+						</li>	
 						<li>
 							<img src="shanghai.JPG"/>
-							<span class="description"><span>A view of Shanghai</span></span>
+								<span class="description"><span>A viewof Shanghai</span></span>
 						</li>
-					
 						<li>
 							<img src="me.JPG"/>
 							<span class="description"><span>Hi! This is me :)</span></span>
 						</li>
-
 						<li>
 							<img src="waffle.JPG"/>
 							<span class="description"><span>A Cal waffle is a good waffle</span></span>
 						</li>
-	
-				
-
-			
-
+					</ul>
+				</div>
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					<ul>
 						<li>
 							<img src="ancient.JPG"/>
 							<span class="description"><span>Going back to my roots</span></span>
 						</li>
-
 						<li>
 							<img src="chinchilla.JPG"/>
 							<span class="description"><span>Chinchilla's pee on you when they're annoyed</span></span>
 						</li>
-					
 						<li>
 							<img src="school.JPG"/>
 							<span class="description"><span>My beautiful university</span></span>
 						</li>
-			
 						<li>
 							<img src="ocean.JPG"/>
 							<span class="description"><span>A well-flown bird over the Pacific</span></span>
 						</li>	
-
 						<li>
 							<img src="tennis.JPG"/>
 							<span class="description"><span>Cal Club Tennis</span></span>
 						</li>
-
 						<li>
 							<img src="kayak.JPG"/>
 							<span class="description"><span>Kayaking in the lagoon in my hometown Foster City, CA</span></span>
 						</li>
 					</ul>
-					</div>
-
 				</div>
-			
-
-
+			</div>
 		<div class="inline">
 			<div class="knowledge">
 				<a name="wrench"></a>
-				<h1 class="heading">Things I Know</h1>
+				<h1 class="heading">Some things I know</h1>
 					<ul class="skills">
 						<li>Java</li>
 						<li>Unit Testing</li>
@@ -143,12 +128,10 @@
 					</ul>
 			</div>
 		</div>
-
-
 		<div class="projects">
 			<a name="folder"></a>
 			<h1 class="heading">Projects</h1>
-				<p class="classProjectsInfo">Recent class projects</p>
+				<p class="classProjectsInfo">From classic games to version control systems, here are some of my favorite class projects.</p>
 				<div class="classProjects">
 					<ul class="img-list">
 						<li>
@@ -157,27 +140,21 @@
 								<span class="description2"><span><i class="fa fa-gamepad"></i>Checkers61B<a href="checkers.html"><span><em>Learn More</em></span></a></span></span>
 							</div>
 						</li>
-
 						<li>
 							<img src="cover_ngram.jpg">
 							<span class="description2"><span><i class="fa fa-line-chart"></i>Ngordnet<a href="ngordnet.html"><span><em>Learn More</em></span></a></span></span>
 						</li>
-
 						<li>
-
 							<img src="gitlet_cover.jpg">
 							<span class="description2"><span><i class="fa fa-github-alt"></i>Gitlet<a href="gitlet.html"><span><em>Learn More</em></span></a></span></span>
 						</li>
 					</ul>
 				</div>
 		</div>
-
-
 		<div class="contact">
 			<a name="envelope"></a>
-			<h1 class="heading">Contact Me!</h1>
+			<h1 class="heading">Let's keep in touch :)</h1>
+			<p style="text-align: center">cindyliu@berkeley.edu</p>
 		</div>
-
-
 	</body>
 </html>

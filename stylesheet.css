@@ -1,12 +1,12 @@
 * {
 	margin: 0;
 	padding: 0;
+	font-family: 'Source Sans Pro', sans-serif;
 
 }
 
 body {
 	background-color: white;
-	font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;
 	color: #2D343C;
 }
 
@@ -38,6 +38,11 @@ a:visited {
 	padding-left: 10px;
 	padding-right: 40px;
 	background-color: #FFDEBD;
+	text-decoration: none;
+}
+
+.buttons li:link {
+	color: #2D343C;
 }
 
 .opening {
@@ -45,8 +50,7 @@ a:visited {
 	margin: 0;
 	background-color: #FFDEBD;
 	text-align: center;
-	font-size: 50px;
-	top: 25vh;
+	font-size: 80px;
 	width: 100%;
 	display: inline-block;
 }
@@ -55,20 +59,14 @@ a:visited {
 	padding-top: 135px;
 	padding-bottom: 15px;
 	border-bottom: 2px dashed white;
-	font-family: "Century Gothic", sans-serif;
-
 }
 
 .blurb {
-	font-size: 34px;
+	font-size: 100px;
 	display: absolute;
 	clear: both;
-}
-
-
-#cindy_jump {
-	height: 200px;
-	display: none;
+	padding-top: 60px;
+	padding-bottom: 20px;
 }
 
 .opening li {
@@ -76,28 +74,42 @@ a:visited {
 	display: none;
 }
 
-.imageshow:hover + #cindy_jump {
+
+.cindy {
+	padding-top: 50px;
+	height: 275px;
 	display: inline;
 }
 
-#cindy {
-	height: 300px;
-	margin-top: 100px;
-	display: inline;
+.cindy_jump {
+	height: 250px;
+	width: auto;
+	margin-bottom: 150px;
+	padding-top: 50px;
 }
 
-
+#cursor {
+	height: 20px;
+}
 
 .heading {
 	clear: both;
 	text-align: center;
 	padding: 25px;
-	font-size: 40px;
-	text-transform: uppercase;
+	font-size: 50px;
+	padding-bottom: 0;
+	padding-top: 80px;
+}
+
+#caption {
+	padding-bottom: 50px;
+	font-size: 35px;
 }
 
 .down {
-	padding: 8px;
+	padding-top: 60px;
+	padding-bottom: 20px;
+	font-size: 35px;
 }
 
 
@@ -117,27 +129,17 @@ a:visited {
 .info {
 	font-size: 25px;
 	text-align: center;
-	list-style-type: none;
-	font-family: "Century Gothic", sans-serif;
-	padding: 30px;
-
-}
-
-
-.instruction {  
-	margin-bottom: 30px; 
-	font-size: 15px;
-	border: 2px solid #2D343C;
-	padding: 13px;
-	display: inline-block;
+	margin-top: 50px;
+	padding-bottom: 50px;
+	left: auto;
+	right: auto;
+	height: 275px;
 }
 
 .images {
 	list-style-type: none;
     text-align: center;
-    margin: 2px;
-    margin-left: 40px;
-    margin-right: 40px;
+    padding-bottom: 150px;
 }
 
 
@@ -156,8 +158,8 @@ a:visited {
 	list-style-type: none;
     height: 175px;
     width: 175px;
-    margin: 2px;
     position: relative;
+    margin: 5px;
     display: inline-block;
 }
 
@@ -195,6 +197,7 @@ a:visited {
 
 .skills {
 	text-align: center;
+	padding-bottom: 150px;
 }
 
 .skills li {
@@ -209,6 +212,7 @@ a:visited {
 	margin: 0;
 	padding: 0;
 	list-style-type: none;
+	padding-bottom: 150px;
 }
 
 
@@ -244,7 +248,7 @@ ul.img-list li {
 	height: 275px;
 	position: relative;
 	width: auto;
-	margin: 5px;
+	margin: 10px;
 }
 
 span.description2 {
@@ -342,7 +346,6 @@ ul.img-list li:hover span.description2 {
 
 .checkers-description {
 	display: inline-block;
-	border: 1px solid black;
 	width: 600px;
 	margin: 40px;
 	clear: both;
@@ -365,9 +368,7 @@ ul.img-list li:hover span.description2 {
 
 .view-more:hover {
 	color: white;
-	background-color: #2D343C;
 	border: 2px solid #2D343C;
-	color: white;
 }
 
 .ngordnet-img {
@@ -382,10 +383,4 @@ ul.img-list li:hover span.description2 {
 	margin-left: auto;
 	margin-right: auto;
 }
-
-
-
-
-
-
 
