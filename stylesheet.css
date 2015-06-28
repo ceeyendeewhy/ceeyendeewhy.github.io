@@ -14,20 +14,46 @@ a {
 	text-decoration: none;
 }
 
+a:hover {
+	text-decoration: none;
+}
+
 a:link {
 	color: #2D343C;
+	text-decoration: none;
 }
 
 a:visited {
 	color: #2D343C;
+	text-decoration: none;
+}
+
+.buttons {
+	width: 100%;
+	position: fixed;
+	z-index: 1000;
 }
 
 .nav {
 	top: 0;
-	padding: 5px;
-	padding-top: 20px;
+	padding: 10px;
 	background-color: #FFDEBD;
 	text-transform: uppercase;
+	position: absolute;
+	z-index: 1000;
+	width: 100%;
+}
+
+.nav li {
+	font-weight: bolder;
+}
+
+.nav a {
+	color: rgb(45, 52, 60);
+}
+
+.nav a:hover {
+	color: rgba(45, 52, 60, 0.85);
 }
 
 
@@ -38,7 +64,6 @@ a:visited {
 	padding-left: 10px;
 	padding-right: 40px;
 	background-color: #FFDEBD;
-	text-decoration: none;
 }
 
 .buttons li:link {
@@ -53,6 +78,7 @@ a:visited {
 	font-size: 80px;
 	width: 100%;
 	display: inline-block;
+	padding-top: 20px;
 }
 
 .name {
@@ -62,10 +88,10 @@ a:visited {
 }
 
 .blurb {
-	font-size: 100px;
+	font-size: 75px;
 	display: absolute;
 	clear: both;
-	padding-top: 60px;
+	padding-top: 80px;
 	padding-bottom: 20px;
 }
 
@@ -76,21 +102,37 @@ a:visited {
 
 
 .cindy {
-	padding-top: 50px;
+	padding-top: 60px;
 	height: 275px;
 	display: inline;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.cindy:hover {
+	cursor: pointer;
 }
 
 .cindy_jump {
 	height: 250px;
 	width: auto;
 	margin-bottom: 150px;
-	padding-top: 50px;
+	padding-top: 60px;
 	display: none;
+	margin-left: auto;
+	margin-right: auto;
 }
 
-#cursor {
+.cindy_jump:hover {
+	cursor: pointer;
+}
+.cursor {
 	height: 20px;
+}
+
+.cursor_jump {
+	height: 20px;
+	display: none;
 }
 
 .heading {
@@ -111,6 +153,10 @@ a:visited {
 	padding-top: 60px;
 	padding-bottom: 20px;
 	font-size: 35px;
+}
+
+.down:hover {
+	cursor: pointer;
 }
 
 
@@ -307,16 +353,16 @@ span.description2 span span:hover {
 
 span.description2 {
 	font-size: 25px;
-  background: rgba(0,0,0,0.75);
-  color: white;
-  cursor: pointer;
-  display: table;
-  height: 275px;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 100%;
-  opacity: 0;
+  	background: rgba(0,0,0,0.75);
+  	color: white;
+  	cursor: pointer;
+  	display: table;
+  	height: 275px;
+  	left: 0;
+  	position: absolute;
+  	top: 0;
+  	width: 100%;
+  	opacity: 0;
 }
  
 ul.img-list li:hover span.description2 {
@@ -335,6 +381,8 @@ ul.img-list li:hover span.description2 {
 	display: inline-block;
 	margin-left: auto;
 	margin-right: auto;
+	margin: 20px;
+	width: 100%;
 }
 
 .checkers-title {
@@ -342,21 +390,27 @@ ul.img-list li:hover span.description2 {
 	font-size: 30px;
 	padding-bottom: 20px;
 	padding-top: 50px;
+	background-color: #FFDEBD;
+	width: 100%;
 }
 
 
 .checkers-description {
 	display: inline-block;
-	width: 600px;
+	width: 100%;
 	margin: 40px;
 	clear: both;
-	margin-top: 5px;
+	margin-top: 150px;
+	font-size: 20px;
+	text-align: left;
+
 }
 
 .checkers-section {
 	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
+	width: 100%
 }
 
 .view-more {
@@ -372,15 +426,12 @@ ul.img-list li:hover span.description2 {
 	border: 2px solid #2D343C;
 }
 
-.ngordnet-img {
-	height: 400px;
-}
 
 .project-blurb {
 	margin-top: 15px;
 	font-size: 20px;
 	margin-bottom: 20px;
-	width: 600px;
+	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
 }
