@@ -1,11 +1,17 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<link rel="stylesheet" type="text/css" href="fullPage.js/fullPage.js-master/jquery.fullPage.css" />
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-		<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,800' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+		<link type="text/css" rel="stylesheet" href="stylesheet.css" />
+		<script type='text/javascript' src='loadImg.js'></script>
+		<link rel="stylesheet" type="text/css" href="fullPage.js/fullPage.js-master/jquery.fullPage.css" />
+		<script type="text/javascript" src="fullPage.js/fullPage.js-master/jquery.fullPage.js"></script>
 		<script type="text/javascript" src="script.js"></script>
 		<link type="text/css" rel="stylesheet" href="stylesheet.css" />
 		<title>Cindy Liu</title>
@@ -16,65 +22,62 @@
 				<ul>
 					<li><a href="index.html#envelope">Contact</a></li>
 					<li><a href="index.html#folder">Projects</a></li>
-					<li><a href="index.html#wrench">Skills</a></li>
 					<li><a href="index.html#info">About<a></li>
 					<li><a href="index.html#home">Home</a></li>
 				</ul>
 			</div>
 		</div>
-		<div class="checkers-title" style="background-color: #FFDEBD">
-			<i class="fa fa-github-alt" style="font-size: 70px"></i>
-			<h1>Gitlet</h1>
-			<p class="project-blurb">A version control system incorporating core features of git and more using serialization and Java File classes. </p>
-			<p class="view-more"><a href="index.html#folder"><em>View more projects</em></a></p>
-		</div>
-		<div class="checkers-section">
-			<div class="col-lg-7 col-md-7 col-sm-12 col-xs-12"</div>
-				<div style="padding-top: 50px">
-					<img class="checkers" src="gitlet_cover.jpg">
+		<div id="fullpage">
+			<div class="section">
+				<div class="slide slide-gitlet">
+					<div class="checkers-title">
+						<i class="fa fa-github-alt fa-2x"></i>
+						<h1>Gitlet</h1>
+						<p class="project-blurb">A version control system incorporating core features of git and more </p>
+						<a href="index.html#folder"><button type="button" class="btn btn-primary learn-more-btn view-more-btn">View More Projects</button></a>
+					</div>
+				</div>
+				<div class="slide slide-gitlet">
+					<div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
+						<img class="gitlet-img" src="gitlet_cover.jpg">
+					</div>
+					<div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+						<div class="git-ngord-description">
+							<p>The largest Java program I have written at over 1000 lines of code, this was alse the most challenging, and the most fun project I completed in my Data Structures class. Using the java.io.File class and java.io and java.nio packages, I created a version control system inspired by GitHub. Begin by initializing Gitlet. Then add files and view the current status as you wish.</p>
+						</div>
+					</div>
+				</div>
+				<div class="slide slide-gitlet">
+					<div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
+						<img class="gitlet-img" src="gitlet2.jpg">
+					</div>
+					<div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">					
+						<div class="git-ngord-description">
+							<p>The log and global-log features allow user to view the history of commits.</p>
+						</div>
+					</div>
+				</div>	
+				<div class="slide slide-gitlet">
+					<div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
+						<img class="gitlet-img" src="gitlet3.jpg">
+					</div>
+					<div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+						<div class="git-ngord-description">
+							<p>Gitlet rm allows you to remove files so they do not show up in future commit.</p>
+						</div>
+					</div>
+				</div>
+				<div class="slide slide-gitlet">
+					<div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
+						<img class="gitlet-img" src="gitlet4.jpg">
+					</div>
+					<div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+						<div class="git-ngord-description">
+							<p>You can also create new branches and checkout to those branches. Other features of Gitlet include find, remove branch, reset, merge, rebase, and interactive rebase. You can find the detailed spec here: <a href="http://berkeley-cs61b.github.io/public_html/materials/proj/proj2/proj2.html">Gitlet Spec</a></p>
+						</div>
+					</div>
 				</div>
 			</div>
-			<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-				<div class="checkers-description">
-					<p>Begin by initializing Gitlet. Then add files and view status.</p>
-				</div>
-			</div>
-		</div>
-		<div class="checkers-section">
-			<div class="col-lg-7 col-md-7 col-sm-12 col-xs-12"</div>
-				<div style="padding-top: 50px">
-					<img class="checkers" src="gitlet2.jpg">
-				</div>
-			</div>
-			<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-				<div class="checkers-description">
-					<p>The log and global-log features allow user to view commits.</p>
-				</div>
-			</div>
-		</div>
-		<div class="checkers-section">
-			<div class="col-lg-7 col-md-7 col-sm-12 col-xs-12"</div>
-				<div>
-					<img class="checkers" src="gitlet3.jpg">
-				</div>
-			</div>
-			<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-				<div class="checkers-description">
-					<p>You can remove files so they do not show up in the next commit.</p>
-				</div>
-			</div>
-		</div>
-		<div class="checkers-section">
-			<div class="col-lg-7 col-md-7 col-sm-12 col-xs-12"</div>
-				<div>
-					<img class="checkers" src="gitlet4.jpg">
-				</div>
-			</div>
-			<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-				<div class="checkers-description">
-					<p>Create new branches and checkout to those branches. Other features of Gitlet include find, remove branch, reset, merge, rebase, and interactive rebase.</p>
-				</div>
-			</div>
-		</div>
+		</div>		
 	</body>
 </html>

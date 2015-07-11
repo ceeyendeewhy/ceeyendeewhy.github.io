@@ -1,4 +1,9 @@
 $(document).ready(function() {
+	// Wait for window load
+	$(window).load(function() {
+		// Animate loader off screen
+		$(".se-pre-con").fadeOut("slow");;
+	});
 	//cindy jump effect
 	$('.cindy').on('click', function() {
 		$('.cindy').slideUp(1000, function() {
@@ -28,6 +33,12 @@ $(document).ready(function() {
 	    }, 1000);
 	});
 
+	$(".up").click(function() {
+		$('html, body').animate({
+			scrollTop: $(".opening").offset().top
+		}, 1000)
+	});
+
 	$(".nav-about").click(function() {
 		$('html, body').animate({
 			scrollTop: $(".about").offset().top
@@ -40,15 +51,15 @@ $(document).ready(function() {
 	    }, 1000);
 	});
 
-	$(".nav-skills").click(function() {
-	    $('html, body').animate({
-	        scrollTop: $(".knowledge").offset().top
-	    }, 1000);
-	});
+	$(".nav-contact").click(function() {
+		$('html, body').animate({
+			scrollTop: $(".contact").offset().top
+		}, 1000);
+	})
 
 	$(".nav-home").click(function() {
 	    $('html, body').animate({
-	        scrollTop: $(".buttons").offset().top
+	        scrollTop: $(".opening").offset().top
 	    }, 1000);
 	});		
 
@@ -70,5 +81,9 @@ $(document).ready(function() {
 	            $('.buttons').slideDown(500);
 	    }
 	    previousScroll = currentScroll;
+	});
+
+	$('#fullpage').fullpage({
+		slidesNavigation: true
 	});
 });

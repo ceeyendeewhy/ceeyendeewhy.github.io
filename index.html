@@ -1,27 +1,24 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-		<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,800' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
-		<script type="text/javascript" src="script.js"></script>
 		<link type="text/css" rel="stylesheet" href="stylesheet.css" />
+		<script type='text/javascript' src='loadImg.js'></script>
+		<script type='text/javascript'>
+		    $(function(){
+		        $('').imgPreload()
+		    })
+		</script>
+		<script type="text/javascript" src="script.js"></script>
 		<title>Cindy Liu</title>
 	</head>
-	<body>
-		<div class="buttons">			
-			<div class="nav">
-				<ul>
-					<li class="nav-contact"><a href="index.html#envelope">Contact</a></li>
-					<li class="nav-projects"><a href="index.html#folder">Projects</a></li>
-					<li class="nav-skills"><a href="index.html#wrench">Skills</a></li>
-					<li class="nav-about"><a href="index.html#info">About<a></li>
-					<li class="nav-home"><a href="index.html#home">Home</a></li>
-				</ul>
-			</div>
-		</div>
+	<body>	
+	<div class="se-pre-con"></div>
 		<div class="opening" style="text-align: center">
 			<div class="hover-image">
 				<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
@@ -30,47 +27,54 @@
 				</div>
 			</div>
 			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-				<p class="blurb">Hello, I'm Cindy.</p>
-				<h3 id="caption">See me jump.</h3>
-				<h6 class="down"><i class="fa fa-angle-double-down"></i></h6>
+				<p class="blurb">I'm Cindy</p>
+				<h3 id="caption">See me jump</h3>
+				<h6 class="down"><i class="fa fa-caret-down"></i></h6>
 			</div>
 			<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
 				<img class="cindy_jump" src="cindy_jump.PNG">
 				<img class="cursor_jump" src="cursor.png">
 			</div>
 		</div>
+
 		<div class="about">
+			<div class="buttons">			
+				<div class="nav">
+					<ul>
+						<li class="nav-contact"><a href="index.html#envelope">Contact</a></li>
+						<li class="nav-projects"><a href="index.html#folder">Projects</a></li>
+						<li class="nav-about"><a href="index.html#info">About<a></li>
+						<li class="nav-home"><a href="index.html#home">Home</a></li>
+					</ul>
+				</div>
+			</div>
 			<a name="info"></a>
-			<h1 class="heading">Who am I?</h1>
+			<h1 class="heading">Hi There</h1>
+			<h3 class="subheading">About Me</h3>
 			<div class="text">
-				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				<div>
 					<div class="info">
 						<p>I am a Florida born, China/TN/AZ/CA raised, <br>
 						Cherry Garcia ice cream eating, tennis playing, <br>
-						critter loving student studying Computer Science <br>
+						critter loving, 2nd year student studying Computer Science <br>
 						at the University of California, Berkeley. <br>
 					</div>
 				</div>
 			</div>
 			<div class="images">
-				<div class="col-lg-12 col-md-12col-sm-12 col-xs-12">
+				<div>
 					<ul>
 						<li>
 							<img src="mabel.JPG"/>
-							<span class="description"><span>This is Mabel, one of the kittens I've fostered</span></span>
+							<span class="description"><span>Mabel, one of the kittens I've fostered through <a href="http://www.homelesscatnetwork.com/">HCN</a></span></span>
 						</li>
 						<li>
 							<img src="butterfly.JPG"/>
-							<span class="description"><span>Taken in Zhenjiang, China</span></span>
-							</li>
-
-						<li>
-							<img src="crack.JPG"/>
-							<span class="description"><span>My most comfortable pair of knockoff Berkenstocks</span></span>
-						</li>	
+							<span class="description"><span>Taken while wandering</span></span>
+						</li>
 						<li>
 							<img src="shanghai.JPG"/>
-								<span class="description"><span>A viewof Shanghai</span></span>
+								<span class="description"><span>A view of Shanghai</span></span>
 						</li>
 						<li>
 							<img src="me.JPG"/>
@@ -82,19 +86,15 @@
 						</li>
 					</ul>
 				</div>
-				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				<div>
 					<ul>
 						<li>
-							<img src="ancient.JPG"/>
-							<span class="description"><span>Going back to my roots</span></span>
-						</li>
-						<li>
 							<img src="chinchilla.JPG"/>
-							<span class="description"><span>Chinchilla's pee on you when they're annoyed</span></span>
+							<span class="description"><span>Dudu, a chinchilla that pees on you when you annoy her</span></span>
 						</li>
 						<li>
 							<img src="school.JPG"/>
-							<span class="description"><span>My beautiful university</span></span>
+							<span class="description"><span>GO BEARS!</span></span>
 						</li>
 						<li>
 							<img src="ocean.JPG"/>
@@ -111,51 +111,59 @@
 					</ul>
 				</div>
 			</div>
-		<div class="inline">
-			<div class="knowledge">
-				<a name="wrench"></a>
-				<h1 class="heading">Some things I know</h1>
-					<ul class="skills">
-						<li>Java</li>
-						<li>Unit Testing</li>
-						<li>Python</li>
-						<li>HTML5</li>
-						<li>CSS</li>
-						<li>JavaScript</li>
-						<li>Bootstrap</li>
-						<li>AngularJS</li>
-						<li>Scheme</li>
-						<li>SQLite</li>
-					</ul>
-			</div>
 		</div>
 		<div class="projects">
 			<a name="folder"></a>
 			<h1 class="heading">Projects</h1>
-				<p class="classProjectsInfo">From classic games to version control systems, here are some of my favorite class projects.</p>
-				<div class="classProjects">
-					<ul class="img-list">
-						<li>
-							<div class="wrap">
-								<img src="checkers_cover.jpg">
-								<span class="description2"><span><i class="fa fa-gamepad"></i>Checkers61B<a href="checkers.html"><span><em>Learn More</em></span></a></span></span>
-							</div>
-						</li>
-						<li>
-							<img src="cover_ngram.jpg">
-							<span class="description2"><span><i class="fa fa-line-chart"></i>Ngordnet<a href="ngordnet.html"><span><em>Learn More</em></span></a></span></span>
-						</li>
-						<li>
-							<img src="gitlet_cover.jpg">
-							<span class="description2"><span><i class="fa fa-github-alt"></i>Gitlet<a href="gitlet.html"><span><em>Learn More</em></span></a></span></span>
-						</li>
-					</ul>
-				</div>
+			<h3 class="subheading">Some things I've coded</h3>
+				<ul>
+					<li>
+						<div>
+							<i class="fa fa-gamepad fa-2x"></i>
+							<h6>Checkers61B (CS 61B)</h6>
+							<p>A classic game of checkers with a twist
+								including bomb and shield pieces</p>
+							<a href="checkers.html"><button type="button" class="btn btn-primary learn-more-btn" style="margin: 30px; margin-bottom: 100px;">Learn More</button></a>
+						</div>
+					</li>
+					<li>
+						<div>
+							<i class="fa fa-github-alt fa-2x"></i>
+							<h6>Gitlet (CS 61B)</h6>
+							<p>A version control system incorporating
+							core features of git and more</p>
+							<a href="gitlet.html"><button type="button" class="btn btn-primary learn-more-btn" style="margin: 30px; margin-bottom: 100px;">Learn More</button></a>
+						</div>
+					</li>
+					<li>
+						<div>
+							<i class="fa fa-line-chart fa-2x"></i>
+							<h6>Ngordnet (CS 61B)</h6>
+							<p>An investigation
+							 of the history of English words and their
+							  relationships</p>
+							<a href="ngordnet.html"><button type="button" class="btn btn-primary learn-more-btn" style="margin: 30px; margin-bottom: 100px;">Learn More</button></a>
+						</div>
+					</li>
+				</ul>
 		</div>
 		<div class="contact">
-			<a name="envelope"></a>
-			<h1 class="heading">Let's keep in touch :)</h1>
-			<p style="text-align: center">cindyliu@berkeley.edu</p>
+			<div class="col-lg-12 col-md-12 col-sm-12">
+				<h1 class="heading">Say Hello</h1>
+			</div>
+				<h3 class="subheading">Let's keep in touch!</h3>
+				<div class="links" style="text-align: center;">
+					<a href="mailto:cindyliu@berkeley.edu"><i class="fa fa-envelope-square" style="color: #dd4b39;"></i></a>
+					<a href="https://linkedin.com/pub/cindy-liu/a6/510/672" target="_blank"><i class="fa fa-linkedin-square" style="color: #007bb6;"></i></a>
+					<a href="https://github.com/ceeyendeewhy" target="_blank"><i class="fa fa-github-square"></i></a>
+				</div>
+		</div>
+		<div class="back-to-top">
+			<i class="up fa fa-caret-up fa-2x" style="display: block;"></i>
+			<a class="back-to-top-text" href="">See me jump again</a>
+		</div>
+		<div class="foot">
+			<p class="author">&#169 2015 Cindy Liu</p>
 		</div>
 	</body>
 </html>

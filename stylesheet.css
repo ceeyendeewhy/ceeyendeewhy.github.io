@@ -1,13 +1,12 @@
 * {
 	margin: 0;
 	padding: 0;
-	font-family: 'Source Sans Pro', sans-serif;
-
+	font-family: 'Open Sans', sans-serif;
 }
 
 body {
 	background-color: white;
-	color: #2D343C;
+	color: #5C5C5C;
 }
 
 a {
@@ -28,24 +27,94 @@ a:visited {
 	text-decoration: none;
 }
 
+.subheading {
+	width: 100%;
+	display: inline-block;
+	text-align: center;
+	font-size: 18px;
+	margin-left: auto;
+	margin-right: auto;
+	color: #5C5C5C;
+}
+
+.class-project {
+	text-align: center;
+	font-size: 15px;
+	width: 250px;
+	height: 300px;
+	border: 1px solid black;
+}
+
+.class-project h6 {
+	text-transform: uppercase;
+	font-size: 20px;
+	font-weight: 600;
+}
+
+.projects {
+	margin-top: 150px;
+	background-color: #F0F7FF;
+	padding-bottom: 150px;
+}
+
+.projects li {
+	display: inline-block;
+	width: 350px;
+	height: 330px;
+	text-align: center;
+	margin: 15px;
+	background-color: white;
+	box-shadow: 2px;
+}
+
+.projects ul {
+	padding-top: 30px;
+	text-align: center;
+}
+
+.projects i {
+	padding-top: 50px;
+	font-size: 30px;
+	color: #2E2E2E;
+}
+
+.projects h6 {
+	padding-top: 10px;
+	font-size: 18px;
+	font-weight: 600;	
+	color: #2E2E2E;
+}
+
+.projects p {
+	padding-top: 15px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.projects a {
+	padding: 5px;
+	border-radius: 2px;
+}
+
 .buttons {
 	width: 100%;
 	position: fixed;
 	z-index: 1000;
+	border: 1px solid black;
 }
 
 .nav {
 	top: 0;
 	padding: 10px;
-	background-color: #FFDEBD;
+	background-color: white;
 	text-transform: uppercase;
-	position: absolute;
+	position: fixed;
 	z-index: 1000;
 	width: 100%;
 }
 
 .nav li {
-	font-weight: bolder;
+	font-weight: 600;
 }
 
 .nav a {
@@ -63,22 +132,23 @@ a:visited {
 	float: right;
 	padding-left: 10px;
 	padding-right: 40px;
-	background-color: #FFDEBD;
+	background-color: white;
 }
 
 .buttons li:link {
-	color: #2D343C;
 }
 
 .opening {
+	color: #2E2E2E;
 	background-size: 100%;
 	margin: 0;
-	background-color: #FFDEBD;
 	text-align: center;
 	font-size: 80px;
 	width: 100%;
 	display: inline-block;
 	padding-top: 20px;
+	height: 100vh;
+	background-color: #F0F7FF;
 }
 
 .name {
@@ -90,8 +160,7 @@ a:visited {
 .blurb {
 	font-size: 75px;
 	display: absolute;
-	clear: both;
-	padding-top: 80px;
+	padding-top: 30vh;
 	padding-bottom: 20px;
 }
 
@@ -102,8 +171,8 @@ a:visited {
 
 
 .cindy {
-	padding-top: 60px;
-	height: 275px;
+	margin-top: 30vh;
+	height: 250px;
 	display: inline;
 	margin-left: auto;
 	margin-right: auto;
@@ -114,10 +183,10 @@ a:visited {
 }
 
 .cindy_jump {
-	height: 250px;
+	height: 225px;
 	width: auto;
 	margin-bottom: 150px;
-	padding-top: 60px;
+	margin-top: 20vh;
 	display: none;
 	margin-left: auto;
 	margin-right: auto;
@@ -127,26 +196,35 @@ a:visited {
 	cursor: pointer;
 }
 .cursor {
+	margin-top: 30vh;
 	height: 20px;
 }
 
 .cursor_jump {
+	margin-top: 20vh;
 	height: 20px;
 	display: none;
 }
 
+hr {
+	border-style: inset;
+	border-width: 2px;
+}
+
 .heading {
-	clear: both;
+	text-transform: uppercase;
+	font-weight: 800;
+	letter-spacing: 3px;
 	text-align: center;
 	padding: 25px;
-	font-size: 50px;
-	padding-bottom: 0;
-	padding-top: 80px;
+	font-size: 30px;
+	padding-bottom: 0px;
+	color: #2E2E2E;
 }
 
 #caption {
-	padding-bottom: 50px;
-	font-size: 35px;
+	margin-bottom: 50px;
+	font-size: 20px;
 }
 
 .down {
@@ -162,6 +240,7 @@ a:visited {
 
 
 .about {
+	padding-top: 30px;
 	color: #2D343C;
 }
 
@@ -174,19 +253,15 @@ a:visited {
 
 
 .info {
-	font-size: 25px;
+	font-size: 20px;
 	text-align: center;
-	margin-top: 50px;
-	padding-bottom: 50px;
-	left: auto;
-	right: auto;
-	height: 275px;
+	margin-top: 20px;
+	margin-bottom: 50px;
 }
 
 .images {
 	list-style-type: none;
     text-align: center;
-    padding-bottom: 150px;
 }
 
 
@@ -235,49 +310,6 @@ a:visited {
     visibility: hidden;
 }
 
-
-
-.knowledge {
-	background-color: white;
-	color: #2D343C;
-}
-
-.skills {
-	text-align: center;
-	padding-bottom: 150px;
-}
-
-.skills li {
-	display: inline;
-	margin: 5px;
-	font-size: 20px;
-	text-align: center;
-}
-
-.classProjects {
-	text-align: center;
-	margin: 0;
-	padding: 0;
-	list-style-type: none;
-	padding-bottom: 150px;
-}
-
-
-
-.classProjects li {
-	display: inline-block;
-	position: relative;
-	height: 275px;
-	width: auto;
-}
-
-
-.classProjects img {
-	height: 275px;
-	width: auto;
-}
-
-
 .wrap {
 	height: 275px;
 	width: auto;
@@ -298,90 +330,74 @@ ul.img-list li {
 	margin: 10px;
 }
 
-span.description2 {
-	background: rgba(0,0,0,0.5);
-  	color: white;
-  	cursor: pointer;
-  	display: table;
-  	height: 275px;
-  	left: 0;
-  	position: absolute;
-  	top: 0;
-  	width: auto;
-  	text-decoration: none;
-}
-
-.description2 a:link {
-	color: white;
-}
-
-.description2 a:visited {
-	color: white;
-}
-
-span.description2 span {
-	margin-top: 110px;
-  display: block;
-  text-align: center;
-  vertical-align: middle;
-  margin-right: 0;
-  width: 100%;
-}
-
 .classProjectsInfo {
 	text-align: center;
 	font-size: 20px;
 	padding: 10px;
-}
-
-span.description2 span span {
-	text-align: center;
-	display: block;
-	font-size: 15px;
-	border: 2px solid white;
-	width: 100px;
-	margin-top: 5px;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-span.description2 span span:hover {
-	color: black;
-	background-color: white;
-	font-size: 15px;
-}
-
-span.description2 {
-	font-size: 25px;
-  	background: rgba(0,0,0,0.75);
-  	color: white;
-  	cursor: pointer;
-  	display: table;
-  	height: 275px;
-  	left: 0;
-  	position: absolute;
-  	top: 0;
-  	width: 100%;
-  	opacity: 0;
 }
  
 ul.img-list li:hover span.description2 {
   opacity: 1;
 }
 .contact {
+	margin-top: 60px;
 	color: #2D343C;
 	background-color: white;
 }
 
+.slide-checkers {
+	background-color: #C3BEBE;
+}
+
+.slide-gitlet {
+	background-color: #FFD8B1;
+}
+
+.slide-ngordnet {
+	background-color: #DAF6DA;
+}
 
 /*Style for projects*/
+.section {
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
 
-.checkers {
-	height: 400px;
+.checkers-img {
+	margin-left: 15%;
+	padding: 20px;
+	float: right;
+	height: 450px;
 	display: inline-block;
-	margin-left: auto;
-	margin-right: auto;
-	margin: 20px;
+}
+
+.gitlet-img, .ngordnet-img, .xchart-img {
+	padding: 20px;
+	margin-left: 10%;
+	padding-right: 30px;
+	float: right;
+	height: 370px;
+	display: inline-block;
+}
+
+.xchart-img {
+	height: 450px;
+	margin-left: 10%;
+}
+.checkers-description, .git-ngord-description {
+	margin-top: 20px;
+	float: left;
+	width: 400px;
+	font-size: 20px;
+}
+
+.checkers-title i {
+	margin-top: 40px;
+}
+
+.checkers-title h1, i {
+	color: #2E2E2E;
+	font-weight: 600;
 }
 
 .checkers-title {
@@ -389,27 +405,21 @@ ul.img-list li:hover span.description2 {
 	font-size: 30px;
 	padding-bottom: 20px;
 	padding-top: 50px;
-	background-color: #FFDEBD;
-	width: 100%;
 }
 
+.git-ngord-description {
+	width: 350px;
+	margin-right: 10%;
+}
 
-.checkers-description {
-	display: inline-block;
-	width: 100%;
-	margin: 40px;
-	clear: both;
-	margin-top: 150px;
-	font-size: 20px;
-	text-align: left;
-
+@media (max-width: 992px) {
+	
 }
 
 .checkers-section {
 	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
-	width: 100%
 }
 
 .view-more {
@@ -425,13 +435,153 @@ ul.img-list li:hover span.description2 {
 	border: 2px solid #2D343C;
 }
 
-
 .project-blurb {
 	margin-top: 15px;
 	font-size: 20px;
 	margin-bottom: 20px;
-	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
 }
 
+label {
+	display: block;
+	margin-top: 20px;
+}
+
+.body {
+	display: block;
+	margin: 0 auto;
+	width: 576px;
+}
+
+form {
+	margin: 0 auto;
+	width: 459px;
+}
+
+input, textarea {
+	width: 439px;
+	height: 27px;
+	padding: 10px;
+	margin-top: 3px;
+	-moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    outline: none;
+}
+
+textarea {
+	height: 100px;
+}
+
+#submit {
+	width: 127px;
+	height: 38px;
+	border: none;
+	margin-top: 20px;
+	cursor: pointer;
+}
+
+#submit:hover {
+	opacity: 0.9;
+}
+
+.foot {
+	width: 100%;
+	text-align: center;
+	font-size: 15px;
+	height: 60px;
+	background-color: #7CA6CF;
+	color: white;
+}
+
+.author {
+	padding-top: 25px;
+	text-align: center;
+}
+
+.contact-button {
+	text-align: center;
+	border: 1px solid black;
+	border-radius: 2px;
+	padding: 5px;
+	display: block;
+}
+
+.back-to-top {
+	text-align: center;
+	font-size: 20px;
+}
+
+.btn.outline {
+    background: #0099cc;
+    padding: 12px 22px;
+}
+
+.contact i {
+	padding-top: 20px;
+	font-size: 50px;
+	padding-bottom: 30px;
+	margin: 5px;
+}
+
+.contact i:hover {
+	opacity: .90;
+}
+
+.btn.learn-more-btn {
+	background: white;
+	border: 1px solid #0099cc;
+	color: #0099cc;
+	font-weight: 600;
+}
+
+.view-more-btn {
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+.btn.learn-more-btn:hover {
+	background-color: #0099cc;
+	color: white;
+}
+
+.btn-primary.outline {
+    border: 2px solid #0099cc;
+    color: white;
+    font-weight: 600;
+}
+
+.btn-primary:hover {
+	color: #0099cc;
+	background: white;
+}
+
+.back-to-top {
+	padding-top: 100px;
+}
+
+.back-to-top-text {
+	font-size: 15px;
+	font-weight: 600;
+	padding-bottom: 50px;
+	display: block;
+}
+
+.no-js #loader {
+	 display: none;  
+}
+
+.js #loader { 
+	display: block; position: absolute; left: 100px; top: 0; 
+}
+
+.se-pre-con {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url(images/images/loader-64x/Preloader_5.gif) center no-repeat #fff;
+}
