@@ -364,31 +364,28 @@ ul.img-list li:hover span.description2 {
 }
 
 .checkers-img {
-	margin-left: 15%;
+	margin-left: 30%;
 	padding: 20px;
-	float: right;
 	height: 450px;
 	display: inline-block;
 }
 
 .gitlet-img, .ngordnet-img, .xchart-img {
 	padding: 20px;
-	margin-left: 10%;
-	padding-right: 30px;
-	float: right;
+	margin-left: 30%;
 	height: 370px;
 	display: inline-block;
 }
 
 .xchart-img {
 	height: 450px;
-	margin-left: 10%;
+	margin-left: 30%;
 }
 .checkers-description, .git-ngord-description {
 	margin-top: 20px;
-	float: left;
-	width: 400px;
+	width: 500px;
 	font-size: 20px;
+	text-align: left;
 }
 
 .checkers-title i {
@@ -413,7 +410,22 @@ ul.img-list li:hover span.description2 {
 }
 
 @media (max-width: 992px) {
-	
+	.checkers-img, .gitlet-img, .ngordnet-img, .xchart-img {
+		display: block;
+		margin: 0 auto;
+	}
+
+	.checkers-description, .git-ngord-description {
+		text-align: center;
+		display: block;
+		margin: 0 auto;
+		width: 90%;
+	}
+
+	.git-ngord-description ul {
+		text-align: left;
+		margin-left: 15%;
+	}
 }
 
 .checkers-section {
