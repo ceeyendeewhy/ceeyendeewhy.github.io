@@ -349,16 +349,6 @@ ul.img-list li:hover span.description2 {
 	background-color: #C4E7FF;
 }
 
-.oh-img {
-	height: 800px;
-}
-
-.oh-description {
-	margin-top: 30vh;
-	font-size: 20px;
-	width: 30vw;
-	margin-left: 70px;
-}
 
 /*Style for projects*/
 .section {
@@ -375,16 +365,24 @@ ul.img-list li:hover span.description2 {
 
 .gitlet-img, .ngordnet-img, .xchart-img {
 	padding: 20px;
-	margin-left: 30%;
+	margin-left: 15%;
 	height: 370px;
 	display: inline-block;
 }
 
 .xchart-img {
 	height: 450px;
-	margin-left: 30%;
+	margin-left: 20%;
 }
-.checkers-description, .git-ngord-description {
+
+.oh-img {
+	height: 475px;
+	margin-left: 25%;
+}
+
+
+
+.checkers-description, .git-ngord-description, .oh-description {
 	margin-top: 20px;
 	width: 500px;
 	font-size: 20px;
@@ -407,18 +405,23 @@ ul.img-list li:hover span.description2 {
 	padding-top: 50px;
 }
 
-.git-ngord-description {
+.git-ngord-description, .oh-description {
 	width: 350px;
 	margin-right: 10%;
 }
 
-@media (max-width: 992px) {
+.oh-description {
+	margin-left: 40px;
+	margin-top: 20vh;
+}
+
+@media (max-width: 1247px) {
 	.checkers-img, .gitlet-img, .ngordnet-img, .xchart-img, .oh-img {
 		display: block;
 		margin: 0 auto;
 	}
 
-	.checkers-description, .git-ngord-description, .oh-img {
+	.checkers-description, .git-ngord-description, .oh-description {
 		text-align: center;
 		display: block;
 		margin: 0 auto;
@@ -429,13 +432,6 @@ ul.img-list li:hover span.description2 {
 		text-align: left;
 		margin-left: 15%;
 	}
-
-	.oh-img {
-		height: 600px;
-		width: auto;
-		margin-bottom: 0px;
-	}
-
 }
 
 .checkers-section {
