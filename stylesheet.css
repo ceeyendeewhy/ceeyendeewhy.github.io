@@ -135,6 +135,14 @@ a:visited {
 	background-color: white;
 }
 
+#matelogo {
+	height: 40px;
+}
+
+.mateimg {
+	height: 600px;
+}
+
 .buttons li:link {
 }
 
