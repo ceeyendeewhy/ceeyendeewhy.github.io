@@ -140,7 +140,12 @@ a:visited {
 }
 
 .mateimg {
-	height: 600px;
+	height: 650px;
+}
+
+.mateimgshift {
+	height: 650px;
+	margin-left: 200px;
 }
 
 .buttons li:link {
@@ -357,6 +362,10 @@ ul.img-list li:hover span.description2 {
 	background-color: #C4E7FF;
 }
 
+.slide-fun {
+	background-color: rgba(235, 147, 136, 0.5);
+}
+
 
 /*Style for projects*/
 .section {
@@ -390,7 +399,7 @@ ul.img-list li:hover span.description2 {
 
 
 
-.checkers-description, .git-ngord-description, .oh-description {
+.checkers-description, .git-ngord-description, .oh-description, .mate-description {
 	margin-top: 20px;
 	width: 500px;
 	font-size: 20px;
@@ -421,6 +430,13 @@ ul.img-list li:hover span.description2 {
 .oh-description {
 	margin-left: 40px;
 	margin-top: 20vh;
+}
+
+.mate-description {
+	z-index: 1000;
+	margin-top: 300px;
+	position: relative;
+	left: -150px;
 }
 
 @media (max-width: 1247px) {
@@ -461,7 +477,7 @@ ul.img-list li:hover span.description2 {
 	border: 2px solid #2D343C;
 }
 
-.project-blurb {
+.project-blurb, .mate-project-blurb {
 	margin-top: 15px;
 	font-size: 20px;
 	margin-bottom: 20px;
